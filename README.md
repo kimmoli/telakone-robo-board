@@ -51,6 +51,8 @@
   * 2 high side switch outputs
     * PC0
     * PC1
+  * 1 debug led output
+    * PC2
 * Digital inputs
   * 16 inputs for limit/zero switches, emergency stop
     * PC8

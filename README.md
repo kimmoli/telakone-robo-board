@@ -24,13 +24,14 @@
   * Virtual serial port
     * OTG_FS_DM PA11 AF10
     * OTG_FS_DP PA12 AF10
+	* USB_RENUM PA10 OUTPUT
 * Wired UART
   * USART3
     * USART3_TX PD8 AF7
     * USART3_RX PD9 AF7
 * Digital outputs
   * 1 enable output for stepper drivers
-    * PE14
+    * PE14 OUTPUT
   * 6 frequency outputs for stepper drivers
     * TIM4_CH1 PD12 AF2
     * TIM5_CH1 PA0 AF2
@@ -39,37 +40,37 @@
     * TIM10_CH1 PB8 AF3
     * TIM11_CH1 PB9 AF3
   * 6 direction outputs for stepper drivers
-    * PE8
-    * PE9
-    * PE10
-    * PE11
-    * PE12
-    * PE13
+    * PE8 OUTPUT
+    * PE9 OUTPUT
+    * PE10 OUTPUT
+    * PE11 OUTPUT
+    * PE12 OUTPUT
+    * PE13 OUTPUT
   * 2 servo signal outputs
     * TIM3_CH1 PA6 AF2
     * TIM3_CH2 PA7 AF2
   * 2 high side switch outputs
-    * PC0
-    * PC1
-  * 1 debug led output
-    * PC2
+    * PC0 OUTPUT
+    * PC1 OUTPUT
+  * 3 debug led outputs
+    * PC2 OUTPUT DEBUG (Green)
+	* PC3 OUTPUT RUN (Green)
+	* PC4 OUTPUT ERROR (Red)
 * Digital inputs
   * 16 inputs for limit/zero switches, emergency stop
-    * PC8
-    * PC9
-    * PC10
-    * PC11
-    * PC12
-    * PC13
-    * PC14
-    * PC15
-    * PD0
-    * PD1
-    * PD2
-    * PD3
-    * PD4
-    * PD5
-    * PD6
-    * PD7
-  
-  
+    * PC8 INPUT
+    * PC9 INPUT
+    * PC10 INPUT
+    * PC11 INPUT
+    * PC12 INPUT
+    * PC13 INPUT
+    * PC14 INPUT
+    * PC15 INPUT
+    * PD0 INPUT
+    * PD1 INPUT
+    * PD2 INPUT
+    * PD3 INPUT
+    * PD4 INPUT
+    * PD5 INPUT
+    * PD6 INPUT
+    * PD7 INPUT

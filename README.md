@@ -12,7 +12,7 @@
     * SPI1_SCK PB3 AF5
     * SPI1_MISO PB4 AF5
     * SPI1_MOSI PB5 AF5
-    * SPI_CS_N PA9 OUTPUT
+    * SPI_CS_N PA8 OUTPUT
 * I2C for external acceleration sensors
   * I2C1
     * I2C1_SCL PB6 AF4
@@ -24,11 +24,16 @@
   * Virtual serial port
     * OTG_FS_DM PA11 AF10
     * OTG_FS_DP PA12 AF10
-	* USB_RENUM PA10 OUTPUT
+	* USB_RENUM PB15 OUTPUT
 * Wired UART
   * USART3
     * USART3_TX PD8 AF7
     * USART3_RX PD9 AF7
+* RS485 UART
+  * USART1
+    * USART1_TX PA9 AF7
+	* USART1_RX PA10 AF7
+	* USART1_TXE PD15 OUTPUT
 * Digital outputs
   * 1 enable output for stepper drivers
     * PE14 OUTPUT

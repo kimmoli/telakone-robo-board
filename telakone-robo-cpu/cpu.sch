@@ -725,23 +725,6 @@ IPC 1005 chip</description>
 <rectangle x1="2.4" y1="-0.7" x2="2.65" y2="0.65" layer="51"/>
 <rectangle x1="-1" y1="-1.05" x2="-0.7" y2="1.05" layer="21"/>
 </package>
-<package name="KEYSTONE-3549-2">
-<pad name="1" x="-3.75" y="5.15" drill="1.2"/>
-<pad name="2" x="3.75" y="5.15" drill="1.2"/>
-<pad name="4" x="-3.75" y="-5.15" drill="2"/>
-<pad name="3" x="3.75" y="-5.15" drill="2"/>
-<wire x1="-8.9" y1="-5" x2="-8.9" y2="5" width="0.127" layer="21"/>
-<wire x1="-8.9" y1="5" x2="8.9" y2="5" width="0.127" layer="21"/>
-<wire x1="8.9" y1="5" x2="8.9" y2="-5" width="0.127" layer="21"/>
-<wire x1="8.9" y1="-5" x2="-8.9" y2="-5" width="0.127" layer="21"/>
-<wire x1="-3" y1="0" x2="-2" y2="1" width="0.127" layer="21" curve="-90"/>
-<wire x1="-2" y1="1" x2="-1" y2="1" width="0.127" layer="21"/>
-<wire x1="-1" y1="1" x2="0" y2="0" width="0.127" layer="21" curve="-90"/>
-<wire x1="0" y1="0" x2="1" y2="-1" width="0.127" layer="21" curve="90"/>
-<wire x1="1" y1="-1" x2="2" y2="-1" width="0.127" layer="21"/>
-<wire x1="2" y1="-1" x2="3" y2="0" width="0.127" layer="21" curve="90"/>
-<text x="10" y="4" size="1.27" layer="25">&gt;NAME</text>
-</package>
 <package name="MPT0.5/8-2.54">
 <pad name="1" x="0" y="0" drill="1.143" shape="square"/>
 <pad name="2" x="2.54" y="0" drill="1.143"/>
@@ -2260,17 +2243,6 @@ Source: http://www.ledtronics.com/ds/smd-0603/Dstr0092.pdf</description>
 <pin name="A" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
 <pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
 </symbol>
-<symbol name="FUSE">
-<wire x1="-3.81" y1="-0.762" x2="3.81" y2="-0.762" width="0.254" layer="94"/>
-<wire x1="3.81" y1="0.762" x2="-3.81" y2="0.762" width="0.254" layer="94"/>
-<wire x1="3.81" y1="-0.762" x2="3.81" y2="0.762" width="0.254" layer="94"/>
-<wire x1="-3.81" y1="0.762" x2="-3.81" y2="-0.762" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
-<text x="-3.81" y="1.397" size="1.778" layer="95">&gt;NAME</text>
-<text x="-3.81" y="-2.921" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
-</symbol>
 <symbol name="PIIKKIRIMA-8">
 <wire x1="3.81" y1="-7.62" x2="-1.27" y2="-7.62" width="0.4064" layer="94"/>
 <wire x1="1.27" y1="-5.08" x2="2.54" y2="-5.08" width="0.6096" layer="94"/>
@@ -2931,22 +2903,6 @@ Source: http://www.ledtronics.com/ds/smd-0603/Dstr0092.pdf</description>
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="KEYSTONE-3549-2" prefix="F">
-<gates>
-<gate name="G$1" symbol="FUSE" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="KEYSTONE-3549-2">
-<connects>
-<connect gate="G$1" pin="1" pad="1 4"/>
-<connect gate="G$1" pin="2" pad="2 3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -10562,6 +10518,57 @@ IPC 1005 chip</description>
 <text x="-1.7526" y="2.794" size="0.8128" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
 <text x="-1.7272" y="-3.4544" size="0.8128" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
 </package>
+<package name="OMAT_IC_2_KEYSTONE-3549-2">
+<wire x1="-8.9" y1="-5" x2="-8.9" y2="5" width="0.127" layer="21"/>
+<wire x1="-8.9" y1="5" x2="8.9" y2="5" width="0.127" layer="21"/>
+<wire x1="8.9" y1="5" x2="8.9" y2="-5" width="0.127" layer="21"/>
+<wire x1="8.9" y1="-5" x2="-8.9" y2="-5" width="0.127" layer="21"/>
+<wire x1="-3" y1="0" x2="-2" y2="1" width="0.127" layer="21" curve="-90"/>
+<wire x1="-2" y1="1" x2="-1" y2="1" width="0.127" layer="21"/>
+<wire x1="-1" y1="1" x2="0" y2="0" width="0.127" layer="21" curve="-90"/>
+<wire x1="0" y1="0" x2="1" y2="-1" width="0.127" layer="21" curve="90"/>
+<wire x1="1" y1="-1" x2="2" y2="-1" width="0.127" layer="21"/>
+<wire x1="2" y1="-1" x2="3" y2="0" width="0.127" layer="21" curve="90"/>
+<pad name="1" x="-3.75" y="5.15" drill="1.2"/>
+<pad name="2" x="3.75" y="5.15" drill="1.2"/>
+<pad name="3" x="3.75" y="-5.15" drill="2"/>
+<pad name="4" x="-3.75" y="-5.15" drill="2"/>
+<text x="10" y="4" size="1.27" layer="25">&gt;NAME</text>
+</package>
+<package name="KEYSTONE-3544-2">
+<wire x1="-7.5" y1="-2.5" x2="-7.5" y2="2.5" width="0.127" layer="21"/>
+<wire x1="-7.5" y1="2.5" x2="7.5" y2="2.5" width="0.127" layer="21"/>
+<wire x1="7.5" y1="2.5" x2="7.5" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="7.5" y1="-2.5" x2="-7.5" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="-3" y1="4" x2="-2" y2="5" width="0.127" layer="21" curve="-90"/>
+<wire x1="-2" y1="5" x2="-1" y2="5" width="0.127" layer="21"/>
+<wire x1="-1" y1="5" x2="0" y2="4" width="0.127" layer="21" curve="-90"/>
+<wire x1="0" y1="4" x2="1" y2="3" width="0.127" layer="21" curve="90"/>
+<wire x1="1" y1="3" x2="2" y2="3" width="0.127" layer="21"/>
+<wire x1="2" y1="3" x2="3" y2="4" width="0.127" layer="21" curve="90"/>
+<pad name="1" x="-5.595" y="0" drill="1.65"/>
+<pad name="2" x="-2.235" y="0" drill="1.65"/>
+<pad name="3" x="2.235" y="0" drill="1.65"/>
+<pad name="4" x="5.595" y="0" drill="1.65"/>
+<text x="4" y="3" size="1.27" layer="25">&gt;NAME</text>
+</package>
+<package name="KEYSTONE-3568">
+<wire x1="-8.2" y1="-3.5" x2="-8.2" y2="3.5" width="0.127" layer="21"/>
+<wire x1="-8.2" y1="3.5" x2="8.2" y2="3.5" width="0.127" layer="21"/>
+<wire x1="8.2" y1="3.5" x2="8.2" y2="-3.5" width="0.127" layer="21"/>
+<wire x1="8.2" y1="-3.5" x2="-8.2" y2="-3.5" width="0.127" layer="21"/>
+<wire x1="-3" y1="0" x2="-2" y2="1" width="0.127" layer="21" curve="-90"/>
+<wire x1="-2" y1="1" x2="-1" y2="1" width="0.127" layer="21"/>
+<wire x1="-1" y1="1" x2="0" y2="0" width="0.127" layer="21" curve="-90"/>
+<wire x1="0" y1="0" x2="1" y2="-1" width="0.127" layer="21" curve="90"/>
+<wire x1="1" y1="-1" x2="2" y2="-1" width="0.127" layer="21"/>
+<wire x1="2" y1="-1" x2="3" y2="0" width="0.127" layer="21" curve="90"/>
+<pad name="1" x="-4.96" y="1.7" drill="1.6"/>
+<pad name="2" x="4.96" y="1.7" drill="1.6"/>
+<pad name="3" x="4.96" y="-1.7" drill="1.6"/>
+<pad name="4" x="-4.96" y="-1.7" drill="1.6"/>
+<text x="-8" y="4" size="1.27" layer="25">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="NPN">
@@ -10935,6 +10942,17 @@ IPC 1005 chip</description>
 <wire x1="0" y1="0" x2="0" y2="15.24" width="0.254" layer="94"/>
 <text x="0" y="17.78" size="1.27" layer="95" rot="MR180">&gt;NAME</text>
 <text x="0" y="-2.54" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="OMAT_IC_2_FUSE">
+<wire x1="-3.81" y1="-0.762" x2="3.81" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="3.81" y1="0.762" x2="-3.81" y2="0.762" width="0.254" layer="94"/>
+<wire x1="3.81" y1="-0.762" x2="3.81" y2="0.762" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="0.762" x2="-3.81" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<text x="-3.81" y="1.397" size="1.778" layer="95">&gt;NAME</text>
+<text x="-3.81" y="-2.921" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -11367,6 +11385,40 @@ DIN A3, landscape with extra doc field</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="MINIBLADE-FUSEHOLDER" prefix="F">
+<gates>
+<gate name="G$1" symbol="OMAT_IC_2_FUSE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-3549-2" package="OMAT_IC_2_KEYSTONE-3549-2">
+<connects>
+<connect gate="G$1" pin="1" pad="1 4"/>
+<connect gate="G$1" pin="2" pad="2 3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-3544-2" package="KEYSTONE-3544-2">
+<connects>
+<connect gate="G$1" pin="1" pad="1 2"/>
+<connect gate="G$1" pin="2" pad="3 4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-3568" package="KEYSTONE-3568">
+<connects>
+<connect gate="G$1" pin="1" pad="1 4"/>
+<connect gate="G$1" pin="2" pad="2 3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -11402,7 +11454,6 @@ DIN A3, landscape with extra doc field</description>
 <part name="+3V4" library="EKE" deviceset="+3V3" device=""/>
 <part name="X6" library="omat_ic_2" deviceset="TE_RUUVILIITIN2" device=""/>
 <part name="GND10" library="EKE" deviceset="GND" device=""/>
-<part name="F1" library="omat_ic_2" deviceset="KEYSTONE-3549-2" device=""/>
 <part name="V16" library="omat_ic_2" deviceset="SMAJXXA" device="" value="SMAJ20A"/>
 <part name="P+10" library="EKE" deviceset="+12V" device=""/>
 <part name="V3" library="omat_ic_2" deviceset="2N7002K" device=""/>
@@ -11825,6 +11876,9 @@ DIN A3, landscape with extra doc field</description>
 <part name="GND128" library="cpu" deviceset="GND" device=""/>
 <part name="X16" library="cpu" deviceset="MPT0.5/4-2.54" device=""/>
 <part name="X2" library="cpu" deviceset="MPT0.5/8-2.54" device=""/>
+<part name="F2" library="cpu" deviceset="MINIBLADE-FUSEHOLDER" device="-3568"/>
+<part name="X17" library="cpu" deviceset="MPT0.5/4-2.54" device=""/>
+<part name="GND129" library="cpu" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -11880,8 +11934,8 @@ DIN A3, landscape with extra doc field</description>
 <instance part="GND4" gate="1" x="137.16" y="182.88" smashed="yes">
 <attribute name="VALUE" x="134.62" y="180.34" size="1.778" layer="96"/>
 </instance>
-<instance part="P+9" gate="1" x="101.6" y="213.36" smashed="yes">
-<attribute name="VALUE" x="99.06" y="208.28" size="1.778" layer="96" rot="R90"/>
+<instance part="P+9" gate="1" x="119.38" y="213.36" smashed="yes">
+<attribute name="VALUE" x="116.84" y="208.28" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="D10" gate="G$1" x="198.12" y="73.66" smashed="yes">
 <attribute name="NAME" x="182.88" y="91.44" size="1.778" layer="95"/>
@@ -11907,13 +11961,9 @@ DIN A3, landscape with extra doc field</description>
 <instance part="GND10" gate="1" x="68.58" y="182.88" smashed="yes">
 <attribute name="VALUE" x="66.04" y="180.34" size="1.778" layer="96"/>
 </instance>
-<instance part="F1" gate="G$1" x="88.9" y="205.74" smashed="yes" rot="MR0">
-<attribute name="NAME" x="92.71" y="207.137" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="92.71" y="202.819" size="1.778" layer="96" rot="MR0"/>
-</instance>
-<instance part="V16" gate="G$1" x="99.06" y="195.58" smashed="yes" rot="R90">
-<attribute name="NAME" x="97.155" y="193.802" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="102.489" y="193.802" size="1.778" layer="96" rot="R90"/>
+<instance part="V16" gate="G$1" x="116.84" y="195.58" smashed="yes" rot="R90">
+<attribute name="NAME" x="114.935" y="193.802" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="120.269" y="193.802" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="N2" gate="G$1" x="193.04" y="142.24" smashed="yes">
 <attribute name="NAME" x="182.88" y="156.21" size="1.27" layer="95"/>
@@ -12006,11 +12056,15 @@ DIN A3, landscape with extra doc field</description>
 <instance part="GND115" gate="1" x="63.5" y="50.8" smashed="yes">
 <attribute name="VALUE" x="60.96" y="48.26" size="1.778" layer="96"/>
 </instance>
+<instance part="F2" gate="G$1" x="88.9" y="205.74" smashed="yes">
+<attribute name="NAME" x="85.09" y="207.137" size="1.778" layer="95"/>
+<attribute name="VALUE" x="72.39" y="202.819" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
 <nets>
-<net name="N$1" class="0">
+<net name="PH5V" class="0">
 <segment>
 <pinref part="N1" gate="G$1" pin="PH"/>
 <wire x1="210.82" y1="205.74" x2="215.9" y2="205.74" width="0.1524" layer="91"/>
@@ -12023,9 +12077,10 @@ DIN A3, landscape with extra doc field</description>
 <junction x="228.6" y="205.74"/>
 <pinref part="L1" gate="G$1" pin="1"/>
 <pinref part="V13" gate="G$1" pin="C"/>
+<label x="218.44" y="205.74" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="BOOT5V" class="0">
 <segment>
 <pinref part="N1" gate="G$1" pin="BOOT"/>
 <pinref part="C4" gate="G$1" pin="2"/>
@@ -12078,8 +12133,8 @@ DIN A3, landscape with extra doc field</description>
 <pinref part="GND10" gate="1" pin="GND"/>
 <pinref part="V16" gate="G$1" pin="A"/>
 <wire x1="68.58" y1="187.96" x2="68.58" y2="185.42" width="0.1524" layer="91"/>
-<wire x1="99.06" y1="193.04" x2="99.06" y2="187.96" width="0.1524" layer="91"/>
-<wire x1="99.06" y1="187.96" x2="68.58" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="193.04" x2="116.84" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="187.96" x2="68.58" y2="187.96" width="0.1524" layer="91"/>
 <junction x="68.58" y="187.96"/>
 <pinref part="X6" gate="G$1" pin="1"/>
 <wire x1="63.5" y1="203.2" x2="68.58" y2="203.2" width="0.1524" layer="91"/>
@@ -12188,17 +12243,17 @@ DIN A3, landscape with extra doc field</description>
 <wire x1="154.94" y1="205.74" x2="177.8" y2="205.74" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="200.66" x2="154.94" y2="205.74" width="0.1524" layer="91"/>
 <junction x="154.94" y="205.74"/>
-<wire x1="137.16" y1="205.74" x2="101.6" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="205.74" x2="119.38" y2="205.74" width="0.1524" layer="91"/>
 <junction x="137.16" y="205.74"/>
-<wire x1="101.6" y1="205.74" x2="101.6" y2="210.82" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="205.74" x2="119.38" y2="210.82" width="0.1524" layer="91"/>
 <pinref part="P+9" gate="1" pin="+12V"/>
-<pinref part="F1" gate="G$1" pin="1"/>
-<wire x1="101.6" y1="205.74" x2="99.06" y2="205.74" width="0.1524" layer="91"/>
-<junction x="101.6" y="205.74"/>
+<wire x1="119.38" y1="205.74" x2="116.84" y2="205.74" width="0.1524" layer="91"/>
+<junction x="119.38" y="205.74"/>
 <pinref part="V16" gate="G$1" pin="C"/>
-<wire x1="99.06" y1="205.74" x2="93.98" y2="205.74" width="0.1524" layer="91"/>
-<wire x1="99.06" y1="198.12" x2="99.06" y2="205.74" width="0.1524" layer="91"/>
-<junction x="99.06" y="205.74"/>
+<wire x1="116.84" y1="205.74" x2="93.98" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="198.12" x2="116.84" y2="205.74" width="0.1524" layer="91"/>
+<junction x="116.84" y="205.74"/>
+<pinref part="F2" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="C33" gate="G$1" pin="1"/>
@@ -12226,14 +12281,15 @@ DIN A3, landscape with extra doc field</description>
 <junction x="226.06" y="76.2"/>
 </segment>
 </net>
-<net name="N$8" class="0">
+<net name="12VIN" class="0">
 <segment>
-<pinref part="F1" gate="G$1" pin="2"/>
 <pinref part="X6" gate="G$1" pin="2"/>
 <wire x1="83.82" y1="205.74" x2="63.5" y2="205.74" width="0.1524" layer="91"/>
+<pinref part="F2" gate="G$1" pin="1"/>
+<label x="71.12" y="205.74" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$17" class="0">
+<net name="PH3V3" class="0">
 <segment>
 <pinref part="N2" gate="G$1" pin="PH"/>
 <pinref part="L6" gate="G$1" pin="A"/>
@@ -12246,9 +12302,10 @@ DIN A3, landscape with extra doc field</description>
 <pinref part="V18" gate="G$1" pin="C"/>
 <wire x1="228.6" y1="144.78" x2="228.6" y2="149.86" width="0.1524" layer="91"/>
 <junction x="228.6" y="149.86"/>
+<label x="218.44" y="149.86" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$19" class="0">
+<net name="BOOT3V3" class="0">
 <segment>
 <pinref part="N2" gate="G$1" pin="BOOT"/>
 <pinref part="C32" gate="G$1" pin="2"/>
@@ -15562,6 +15619,13 @@ ADC123_in0</text>
 <attribute name="VALUE" x="372.11" y="137.16" size="1.778" layer="96" rot="MR0"/>
 <attribute name="NAME" x="372.11" y="153.162" size="1.778" layer="95" rot="MR0"/>
 </instance>
+<instance part="X17" gate="G$1" x="373.38" y="68.58" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="372.11" y="66.04" size="1.778" layer="96" rot="MR0"/>
+<attribute name="NAME" x="372.11" y="82.042" size="1.778" layer="95" rot="MR0"/>
+</instance>
+<instance part="GND129" gate="1" x="342.9" y="63.5" smashed="yes">
+<attribute name="VALUE" x="340.36" y="60.96" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -15775,6 +15839,24 @@ ADC123_in0</text>
 <wire x1="289.56" y1="104.14" x2="284.48" y2="104.14" width="0.1524" layer="91"/>
 <junction x="284.48" y="104.14"/>
 <pinref part="GND119" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="X17" gate="G$1" pin="1"/>
+<wire x1="363.22" y1="78.74" x2="342.9" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="342.9" y1="78.74" x2="342.9" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="X17" gate="G$1" pin="4"/>
+<wire x1="342.9" y1="76.2" x2="342.9" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="342.9" y1="73.66" x2="342.9" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="342.9" y1="71.12" x2="342.9" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="363.22" y1="71.12" x2="342.9" y2="71.12" width="0.1524" layer="91"/>
+<junction x="342.9" y="71.12"/>
+<pinref part="X17" gate="G$1" pin="3"/>
+<wire x1="363.22" y1="73.66" x2="342.9" y2="73.66" width="0.1524" layer="91"/>
+<junction x="342.9" y="73.66"/>
+<pinref part="X17" gate="G$1" pin="2"/>
+<wire x1="363.22" y1="76.2" x2="342.9" y2="76.2" width="0.1524" layer="91"/>
+<junction x="342.9" y="76.2"/>
+<pinref part="GND129" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="+5V" class="0">

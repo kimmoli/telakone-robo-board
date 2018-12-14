@@ -6913,6 +6913,40 @@ Source: http://www.abracon.com/Oscillators/asf1-L-L1.pdf</description>
 <smd name="5" x="1.25" y="0.95" dx="1.25" dy="0.6" layer="1"/>
 <text x="-1.2" y="1.8" size="0.9" layer="25" font="vector">&gt;NAME</text>
 </package>
+<package name="KEYSTONE-3544-2">
+<wire x1="-7.5" y1="-2.5" x2="-7.5" y2="2.5" width="0.127" layer="21"/>
+<wire x1="-7.5" y1="2.5" x2="7.5" y2="2.5" width="0.127" layer="21"/>
+<wire x1="7.5" y1="2.5" x2="7.5" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="7.5" y1="-2.5" x2="-7.5" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="-3" y1="4" x2="-2" y2="5" width="0.127" layer="21" curve="-90"/>
+<wire x1="-2" y1="5" x2="-1" y2="5" width="0.127" layer="21"/>
+<wire x1="-1" y1="5" x2="0" y2="4" width="0.127" layer="21" curve="-90"/>
+<wire x1="0" y1="4" x2="1" y2="3" width="0.127" layer="21" curve="90"/>
+<wire x1="1" y1="3" x2="2" y2="3" width="0.127" layer="21"/>
+<wire x1="2" y1="3" x2="3" y2="4" width="0.127" layer="21" curve="90"/>
+<pad name="1" x="-5.595" y="0" drill="1.65"/>
+<pad name="2" x="-2.235" y="0" drill="1.65"/>
+<pad name="3" x="2.235" y="0" drill="1.65"/>
+<pad name="4" x="5.595" y="0" drill="1.65"/>
+<text x="4" y="3" size="1.27" layer="25">&gt;NAME</text>
+</package>
+<package name="KEYSTONE-3568">
+<wire x1="-8.2" y1="-3.5" x2="-8.2" y2="3.5" width="0.127" layer="21"/>
+<wire x1="-8.2" y1="3.5" x2="8.2" y2="3.5" width="0.127" layer="21"/>
+<wire x1="8.2" y1="3.5" x2="8.2" y2="-3.5" width="0.127" layer="21"/>
+<wire x1="8.2" y1="-3.5" x2="-8.2" y2="-3.5" width="0.127" layer="21"/>
+<wire x1="-3" y1="0" x2="-2" y2="1" width="0.127" layer="21" curve="-90"/>
+<wire x1="-2" y1="1" x2="-1" y2="1" width="0.127" layer="21"/>
+<wire x1="-1" y1="1" x2="0" y2="0" width="0.127" layer="21" curve="-90"/>
+<wire x1="0" y1="0" x2="1" y2="-1" width="0.127" layer="21" curve="90"/>
+<wire x1="1" y1="-1" x2="2" y2="-1" width="0.127" layer="21"/>
+<wire x1="2" y1="-1" x2="3" y2="0" width="0.127" layer="21" curve="90"/>
+<pad name="1" x="-4.96" y="1.7" drill="1.6"/>
+<pad name="2" x="4.96" y="1.7" drill="1.6"/>
+<pad name="3" x="4.96" y="-1.7" drill="1.6"/>
+<pad name="4" x="-4.96" y="-1.7" drill="1.6"/>
+<text x="-8" y="4" size="1.27" layer="25">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="EKE_+3V3">
@@ -10659,6 +10693,40 @@ Source: http://www.abracon.com/Oscillators/asf1-L-L1.pdf</description>
 <connect gate="G$1" pin="D" pad="4"/>
 <connect gate="G$1" pin="GND" pad="2"/>
 <connect gate="G$1" pin="VCC" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MINIBLADE-FUSEHOLDER" prefix="F">
+<gates>
+<gate name="G$1" symbol="OMAT_IC_2_FUSE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-3549-2" package="OMAT_IC_2_KEYSTONE-3549-2">
+<connects>
+<connect gate="G$1" pin="1" pad="1 4"/>
+<connect gate="G$1" pin="2" pad="2 3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-3544-2" package="KEYSTONE-3544-2">
+<connects>
+<connect gate="G$1" pin="1" pad="1 2"/>
+<connect gate="G$1" pin="2" pad="3 4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-3568" package="KEYSTONE-3568">
+<connects>
+<connect gate="G$1" pin="1" pad="1 4"/>
+<connect gate="G$1" pin="2" pad="2 3"/>
 </connects>
 <technologies>
 <technology name=""/>
